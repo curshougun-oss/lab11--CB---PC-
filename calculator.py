@@ -38,4 +38,3 @@ def logarithm(a, b):
     if b <= 0:
         raise ValueError("Argument must be positive")
     return math.log(b, a)
-
