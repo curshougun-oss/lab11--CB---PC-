@@ -12,6 +12,7 @@ class TestCalculator(unittest.TestCase):
         self.assertTrue(subtract(2,3),-1)
         self.assertTrue(subtract(-2,3),-5)
         self.assertTrue(subtract(-2,-3),1)
+        
     ######## Partner 1
     # def test_multiply(self): # 3 assertions
     #     fill in code
@@ -25,18 +26,10 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ZeroDivisionError):
             div(0, 5)
 
-
     def test_logarithm(self):
         self.assertTrue(logarithm(10,100),2)
         self.assertTrue(logarithm(2,64),6)
         self.assertTrue(logarithm(10,10000000),7)
-
-    # def test_log_invalid_base(self): # 1 assertion
-    #     # use same technique from test_divide_by_zero
-    #     fill in code
-    # ##########################
-
-
 
     def test_log_invalid_base(self):
         with self.assertRaises(ValueError):
