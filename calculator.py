@@ -26,7 +26,7 @@ def square_root(a):
     else:
         return math.sqrt(a)
     
-def hypothenuse(a, b):
+def hypotenuse(a, b):
     return math.hypot(a, b)
 
 def subtract(a, b):
